@@ -1,0 +1,50 @@
+{
+  "public": {
+    "not_found": "奇怪，页面好像消失了",
+    "server_maintenance": "服务器正在维护中，请您稍后访问",
+    "phone": "手机",
+    "google": "谷歌"
+  },
+  "user": {
+    "register_error": "请输入正确的注册信息",
+    "register_success": "注册成功",
+    "register_toLogin": "前往登录"
+  },
+  "asset": {
+    "asset_resend_email": "重发邮件",
+    "asset_miners_fee": "含矿工费",
+    "asset_amount": "总资产",
+    "asset_balance": "可用资产",
+    "asset_locked": "冻结资产",
+    "asset_recharge_address_get": "获取接收地址",
+    "asset_recharge_address_get_tip": "您还没有充值地址，点击生产充值地址"
+  },
+  "ad": {
+    "ad_title": "发布一个{0}交易广告",
+    "ad_title_tip": "1、发布一则交易广告是免费的。<br>2、当交易完成后，发布交易广告的用户需要缴纳交易额 0.8% 的费用作为手续费。<br>3、建议所有与交易对象的交流都在 OTCMAKER 上进行，请注意高风险或有欺诈风险的付款方式。",
+    "ad_credit_low_tip": "* 您的资产中 {0} 可用余额不足 {1}，无法发布广告，请确保有足够余额后继续！"
+
+  },
+  "order": {
+    "order_detail": "订单详情",
+    "order_hide_detail": "隐藏详情",
+    "order_show_detail": "显示详情"
+  },
+  "request": {
+    "100000": "服务器操作失败",
+    "100001": "错误的请求参数",
+    "100002": "需要登录",
+    "100003": "无效的邀請碼",
+    "100004": "用户名或者密码错误"
+  },
+  "validate": {
+    "alipay_name_range": "支付宝账户名称长度应该介于4-20之间",
+    "alipay_account_range": "支付宝账号长度应该介于4-40之间",
+    "card_holder_range": "银行卡账户长度应该介于2-20之间",
+    "card_number_range": "银行卡卡号长度应该介于16-19之间",
+    "password_range": "{0}-{1}位, 包含字母和数字",
+    "address_label": "必须2-16个字符",
+    "max_length": "字数不得超过{0}",
+    "must_be_number": "必须是数字"
+  }
+}

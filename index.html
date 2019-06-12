@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>management-system</title>
+    <style>
+      html, body{
+        margin: 0;
+        padding:0;
+        height: 100%;
+      }
+    </style>
+
+    <script>
+
+    var arr = [
+      {
+        visible:'1',
+        name:3,
+        children:[
+          {name:11,visible:'0'},
+          {name:12,visible:'0'}]},
+      {
+        visible:'0',
+        name:4,
+        children:[
+          {name:13,visible:'1'},
+          {name:14,visible:'0'},
+          {name:14,visible:'0'},
+          {name:14,visible:'0'}]},
+      {
+        visible:'0',
+        name:1,
+        children:[
+          {name:15,visible:'1'},
+          {name:16,visible:'0'},
+          {name:14,visible:'0'},
+          {name:14,visible:'0'},
+          {name:14,visible:'0'}]
+      }]; 
+  
+    let res = arr.filter(item=>item.visible==0);
+    
+    function filterMenu(data){
+      return  arr.filter(item=>item.visible==0).map(item=>{
+        item = Object.assign({},item)
+        if(item.children){
+          item.children=fil(item.children)
+        }
+        return item
+      })
+    }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
